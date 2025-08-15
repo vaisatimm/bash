@@ -36,4 +36,11 @@ You can see all the file operators for tests writing "man test".
 STRING1=STRING2 	True, if strings are equal;
 STRING1!=STRING2 	True, if strings are not equal.
 
+numero1 -eq numero2 	True, if numero1 is equal to numero2.
+numero1 -ne numero2	True, if numero1 is not equal to numero2.
 
+numero1 -lt numero2	True, if numero1 is less than numero2.
+numero1 -le numero2	True, if numero1 is less than or equal to numero2.
+
+numero1 -gt numero2	True, if numero1 is greater than numero2.
+numero1 -ge numero2 	True, if numero1 is greater than or equal to numero2.
