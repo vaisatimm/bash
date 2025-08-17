@@ -28,6 +28,7 @@ Notice that you can call other functions in a function as you call a function af
 function hello() {
     echo "Hello!"
     now 	#This is the invokation of the following declared function. We can call a function that will be declared later.
+		#but you can't call hello till you don't declare now().
 }
 
 
