@@ -8,3 +8,32 @@ function-name () {
 	# Code goes here.
 }
 
+--- EXAMPLE ---
+
+#!/usr/bin/env bash
+
+function hello() {
+    echo "Hello!"
+}
+hello
+
+In this example we underline how to write and call a function by just writing the name
+of the function without brackets.
+
+--- EXAMPLE ---
+
+Notice that you can call other functions in a function as you call a function after it is declared:
+
+#!/usr/bin/env bash
+function hello() {
+    echo "Hello!"
+    now 	#This is the invokation of the following declared function. We can call a function that will be declared later.
+}
+
+
+function now() {
+    echo "It's $(date +%r)"
+}
+
+hello
+
