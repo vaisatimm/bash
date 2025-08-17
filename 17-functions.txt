@@ -38,3 +38,21 @@ function now() {
 
 hello
 
+---------------------
+
+$0 = the script itself, not the fuction name. 
+
+
+--- EXAMPLE OF POSITIONAL PARAMETERS PASSED TO A FUNCTION ---
+
+#!/usr/bin/env bash
+
+function hello() {
+    echo "Hello $1"
+}
+
+hello Jason #Here we are calling the function hello and then passing Jason as a parameter for $1
+
+# Output is: Hello Jason
+
+

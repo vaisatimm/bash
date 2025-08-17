@@ -1,0 +1,5 @@
+If a variable is defined at the very top of your script than it is available at any level in the script.
+
+If it is define just before the call of a function it is available from that point on, inside the following functions.
+
+If a variable is define just inside a function, then it is available just inside the function. 
