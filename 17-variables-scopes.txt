@@ -3,3 +3,17 @@ If a variable is defined at the very top of your script than it is available at 
 If it is define just before the call of a function it is available from that point on, inside the following functions.
 
 If a variable is define just inside a function, then it is available just inside the function. 
+
+If a variable is defined inside a function, until that function is not called and executed, that variable is not available outside the function itself.
+
+#!/bin/basH
+my_function() {
+    GLOBAL_VAR=1
+}
+
+# GLOBAL_BAR not available yet.
+echo $GLOBAL_VAR
+my_function
+# GLOBAL_VAR is NOW available.
+
+echo $GLOBAL_VAR
