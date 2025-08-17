@@ -17,3 +17,11 @@ my_function
 # GLOBAL_VAR is NOW available.
 
 echo $GLOBAL_VAR
+
+You can create a local variable inside a function using the word "local" before the name of the variable:
+
+local LOCAL_VAR=1
+
+Only functions can have local variables. 
+
+
