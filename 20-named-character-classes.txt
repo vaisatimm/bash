@@ -1,0 +1,19 @@
+[[:alpha:]] matches alphabetical characters, both lowercase and uppercase.
+
+[[:alnum:]] matches alphanumerical characters, both alpha and digits, both lowercase and uppercase.
+
+[[:digit:]] matches any digits.
+
+[[:lower:]] matches any lowercase.
+
+[[:space:]] matches wide spaces: spaces, tabs and new lines characters. 
+
+[[:upper:]] 'upper' only matches uppercase letters. 
+
+If you want to search a character that is used wildcards, you have to escape it:
+
+Match all files that end with a question mark:
+
+*\?
+
+output: done?
