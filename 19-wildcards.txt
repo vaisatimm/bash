@@ -1,1 +1,30 @@
 --- WildCards ---
+
+**Wildcards**
+
+ "*" – matches zero or more characters.
+  ○ "*.txt"
+  ○ "a*"
+  ○ "a*.txt"
+
+ "?" – matches exactly one character.
+  ○ "?.txt"
+  ○ "a?"
+  ○ "a?.txt"
+---- More wildcards: Character Classes ---
+
+If you want to find a one carachter file that has a vowel than use this expression: 
+
+[aeiou]
+
+If you want to match words that begins with "ca" and end with a second part of the name that
+contains "n", "t" and/or with a following part than you can write:
+
+ca[nt]*
+
+This will match:
+
+- can;
+- cat;
+- candy;
+- catch.
