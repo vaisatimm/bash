@@ -51,5 +51,11 @@ root@vaisatimm:~/desk/Bash#
 This syntax "*.y{a,}ml" says: take all the elements ending in yaml or yml, which is the secondo element
 after the "," that is next to "a".
 
+--- More examples ---
 
+ls *.txt        # tutti i file che finiscono con .txt
+ls a?           # file che iniziano con 'a' e hanno un solo altro carattere
+ls [0-9]*       # file che iniziano con una cifra
+ls [!0-9]*      # file che NON iniziano con una cifra
+ls **/*.log     # tutti i .log in qualsiasi sottodirectory (se globstar attivo)
 
