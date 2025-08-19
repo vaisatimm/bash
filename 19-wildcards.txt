@@ -28,3 +28,28 @@ This will match:
 - cat;
 - candy;
 - catch.
+
+If you want to match all the files that do not begins with a vowel than:
+
+[!aeiou]*
+
+Some nice examples:
+
+
+root@vaisatimm:~/desk/Bash# ls -1 [!01]*
+file1.yaml
+file2.yml
+
+test:
+root@vaisatimm:~/desk/Bash# mv *.y{a,}ml test/
+root@vaisatimm:~/desk/Bash# ls -1 test/
+file1.yaml
+file2.yml
+root@vaisatimm:~/desk/Bash#
+
+
+This syntax "*.y{a,}ml" says: take all the elements ending in yaml or yml, which is the secondo element
+after the "," that is next to "a".
+
+
+
