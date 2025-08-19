@@ -17,3 +17,13 @@ Match all files that end with a question mark:
 *\?
 
 output: done?
+--- More examples ---
+
+root@vaisatimm:~/desk/Bash#  touch mp3
+root@vaisatimm:~/desk/Bash# ls *[[:digit:]]
+mp3
+ 
+This means that we have to match all the words that ends with a number.
+
+
+

@@ -1,0 +1,35 @@
+# Cos'è shopt? = shell options, un comando interno di bash
+# Serve ad abilitare o disabilitare certe funzionalità extra della shell che non fanno parte dello standard POSIX.
+
+Sintassi:
+
+shopt -s OPZIONE → abilita (set) l’opzione.
+
+shopt -u OPZIONE → disabilita (unset) l’opzione.
+
+shopt da solo → mostra tutte le opzioni e il loro stato (on/off).
+
+2. Cosa significa nullglob
+
+glob = l’espansione dei pattern tipo *.jpg, file?.txt, [abc]*, ecc.
+
+Normalmente, in bash, se scrivi:
+
+echo *.jpg
+
+
+e non ci sono file .jpg, il risultato NON è vuoto → la shell lascia letteralmente *.jpg.
+
+Esempio:
+
+$ echo *.jpg
+*.jpg
+
+
+Con shopt -s nullglob, invece, se non ci sono file che corrispondono al pattern, il pattern diventa vuoto.
+
+Esempio:
+
+$ shopt -s nullglob
+$ echo *.jpg
+# non stampa nulla
