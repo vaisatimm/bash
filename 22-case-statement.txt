@@ -1,0 +1,22 @@
+--- Case statement ---
+
+case "$VAR" in 
+    pattern_1)
+      # Commands go here.
+      ;;
+    pattern_N)
+      # Commands go here.
+      ;;
+esac
+
+--- Example ---
+
+case "$1" in
+    start)
+      /usr/sbin/sshd
+      ;;
+    stop)
+      kill $(cat /var/run/sshd.pid)
+      ;;
+esac
+      	
